@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Block, Inline, Inline Block</title>
+</head>
+<body>
+
+    <!-- 
+    1. Block:
+        - Starts on a new line
+        - Takes full width available
+        - Width, height, margin, padding: YES
+        - Common Examples: 
+        <div>, <p>, <h1>–<h6>, <header>, <footer>, <section>, <article>, <nav>, <aside>, <form>, <table>, <ul>, <ol>, <li>
+        - Full List of Block-Level Elements:
+        <address>, <article>, <aside>, <blockquote>, <canvas>, <dd>, <div>, <dl>, <dt>, <fieldset>,
+        <figcaption>, <figure>, <footer>, <form>, <h1>–<h6>, <header>, <hr>, <li>, <main>, <nav>,
+        <noscript>, <ol>, <p>, <pre>, <section>, <table>, <tfoot>, <ul>, <video>
+
+    2. Inline:
+        - Does NOT start on a new line
+        - Takes only the width it needs
+        - Width & height: NO
+        - Common Examples: <span>, <a>, <strong>, <em>, <img>, <label>, <input>
+        - Full List of Inline Elements:
+        <a>, <abbr>, <acronym>, <b>, <bdo>, <big>, <br>, <button>, <cite>, <code>, <dfn>, <em>, <i>,
+        <img>, <input>, <kbd>, <label>, <map>, <object>, <output>, <q>, <samp>, <script>, <select>,
+        <small>, <span>, <strong>, <sub>, <sup>, <textarea>, <time>, <tt>, <var>
+
+    3. Inline-block:
+        - Displays inline (does not break line)
+        - BUT allows width, height, margin, and padding
+        - Useful for button-like components or flexible layout blocks
+
+    Use CSS to control display behavior:
+        display: block | inline | inline-block;
+    -->
+
+    <div style="background-color: aliceblue;">
+        <h4>Example on Block level elemetns</h4>
+        <p style="background-color: aqua;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, repellat.</p>
+        <a href="#" style="background-color: aqua; display: block">Made it a block level element</a>
+    </div>  <br>
+
+    <div style="background-color: bisque;">
+        <h4>Example on Inline Elements</h4>
+        <a href="#">Inline</a>
+        <p  style="background-color: aqua; display: inline; width: 100px;">made it an inline block element - here width won't work</p>
+    </div> <br>
+
+    <div style="background-color: aqua;">
+        <h4>Example on Inline Block Elements</h4>
+        <a href="#">Inline Block</a>
+        <p  style="background-color: bisque; display: inline-block; width: 100px;">made it an inline block element - here width works</p>
+    </div>
+
+</body>
+</html>

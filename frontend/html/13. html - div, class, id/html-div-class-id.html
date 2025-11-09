@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Div, Class and ID</title>
+
+    <style>
+        .myClass{
+            width: 80%;
+            height: 100px;
+            border: 1px solid blue;
+            margin: 10px auto;
+        }
+        #myID{
+            width: 80%;
+            height: 100px;
+            border: 1px solid red;
+            border-radius: 10px;
+            margin: 10px auto;
+        }
+    </style>
+    
+</head>
+<body>
+    
+
+    <!--
+        Div:
+            The <div> tag is a block-level container used to group HTML elements together.
+            It is often used for layout, styling, or to apply CSS/JavaScript to a group of elements.
+            It does not add any visual changes by default — just organizes content.
+
+        Class (.):
+            A class is used to group multiple elements under a common name
+            You can style or access many elements that share the same class using CSS or JavaScript.
+            Use when you want to apply the same style to multiple elements.
+
+        ID (#):
+            An id is used to uniquely identify a single element.
+            You should only use an id once per page.
+            Useful for targeting specific elements with CSS or JavaScript (like scroll or buttons).
+    -->
+        
+    <!-- Div Example -->
+    <div style="background-color: antiquewhite; width: 500px; height: 50px; border: 1px solid black; margin: 0 auto;">
+        <p>example of div</p>
+    </div>
+
+    <!-- Class Example -->
+    <div class="myClass">Class</div>
+
+    <!-- ID Example -->
+    <div id="myID">ID</div>
+
+</body>
+</html>

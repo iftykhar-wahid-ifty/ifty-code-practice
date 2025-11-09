@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Forms</title>
+</head>
+<body>
+<!--
+    Form Syntax: 
+        <form action="">
+            <input type="text" name="username">
+        </form>
+
+    Form Attributes: 
+        1. Action: action
+            <form action="/action_page.php">
+            
+            </form>
+
+            - The action attribute defined the action to be performed when the form is submitted.
+            - Usually, the form data is sent to a file on the server when the user clicks on the submit button.
+
+        2. Target: target - _blank, _self (default), _parent, _top, framename
+            <form action="/action_page.php" target="_blank">
+            
+            </form>
+            
+        3. Method: method - get, post
+            <form action="/action_page.php" target="_blank" method="post">
+            
+            </form>
+
+            Notes on GET:
+                - Appends the form data to the URL, in name/value pairs
+                - NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)
+                - The length of a URL is limited (2048 characters)
+                - Useful for form submissions where a user wants to bookmark the result
+                - GET is good for non-secure data, like query strings in Google
+            Notes on POST:
+                - Appends the form data inside the body of the HTTP request (the submitted form data is not shown in the URL)
+                - POST has no size limitations, and can be used to send large amounts of data.
+                - Form submissions with POST cannot be bookmarked
+
+        4. Autocomplete: autocomplete - on, off(default)
+            <form action="/action_page.php" target="_blank" method="post" autocomplete="on">
+            
+            </form>
+
+        5. Novalidate: novalidate
+            <form action="/action_page.php" target="_blank" method="post" novalidate>
+            
+            </form>
+
+    Form Elements: 
+            The HTML <form> element can contain one or more of the following form elements:
+                - <input>
+                - <label>
+                - <select>
+                - <textarea>
+                - <button>
+                - <fieldset>
+                - <legend>
+                - <datalist>
+                - <output>
+                - <option>
+                - <optgroup>
+
+    Input Types: 
+        Here are the different input types you can use in HTML:
+            - <input type="button">
+            - <input type="checkbox">
+            - <input type="color">
+            - <input type="date">
+            - <input type="datetime-local">
+            - <input type="email">
+            - <input type="file">
+            - <input type="hidden">
+            - <input type="image">
+            - <input type="month">
+            - <input type="number">
+            - <input type="password">
+            - <input type="radio">
+            - <input type="range">
+            - <input type="reset">
+            - <input type="search">
+            - <input type="submit">
+            - <input type="tel">
+            - <input type="text">
+            - <input type="time">
+            - <input type="url">
+            - <input type="week">
+
+    Input Attributes: 
+        1. value
+        2. readonly
+        3. disabled
+        4. size
+        5. maxlength
+        6. min
+        7. max
+        8. multiple
+        9. pattern
+        10. placeholder
+        11. required
+        12. step
+        13. autofocus
+        14. height
+        15. width
+        16. list
+        17. autocomplete
+-->
+
+
+    <div style="background-color: antiquewhite;">
+        <h1>Form Attributes</h1>
+        
+        <form action="#" target="_blank" method="post" autocomplete="on">
+            <input type="submit" value="send">
+        </form>
+    </div> <br> <br>
+
+    <div style="background-color: aliceblue;">
+        <h1>Form Elements</h1>
+        
+        <form action="#" method="post" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            <fieldset>
+                <legend>Legend</legend>
+
+                <label for="full-name">Full Name: </label>
+                <input type="text" id="full-name" name="full-name"> <br> <br>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email"> <br> <br>
+
+                <label for="country">Choose country or countries: </label>
+                <select name="country" id="country" size="3" multiple>
+                    <option value="mecca">Mecca</option>
+                    <option value="saudi-arabia">Saudi Arabia</option>
+                    <option value="bangladesh" selected>Bangladesh</option>
+                    <option value="pakistan">Pakistan</option>
+                    <option value="indonesia">Indonesia</option>
+                    <option value="turkey">Turkey</option>
+                    <option value="iran">Iran</option>
+                    <option value="egypt">Egypt</option>
+                    <option value="iraq">Iraq</option>
+                    <option value="malaysia">Malaysia</option>
+                    <option value="morocco">Morocco</option>
+                    <option value="uae">United Arab Emirates</option>
+                    <option value="qatar">Qatar</option>
+                </select> <br> <br>
+
+                <label for="option-group">Option Group</label>
+                <select name="option-group" id="option-group">
+                    <optgroup label="Capital">
+                        <option value="ONE">ONE</option>
+                        <option value="TWO">TWO</option>
+                        <option value="Three">Three</option>
+                    </optgroup>
+                    <optgroup label="Small">
+                        <option value="one">one</option>
+                        <option value="two">two</option>
+                        <option value="three">three</option>
+                    </optgroup>
+                </select> <br> <br>
+
+                <textarea name="massage1" id="massage1" rows="10" cols="20" placeholder="used rows and cols"></textarea>
+                <textarea name="massage2" id="massage2" style="width: 250px; height: 100px;" placeholder="styled width and height"></textarea> <br> <br>
+                   
+                <label for="datalist">Datalist: </label>
+                <input list="datalists" id="datalist">
+                <datalist id="datalists">
+                    <option value="datalist one">
+                    <option value="datalist two">
+                    <option value="datalist three">
+                    <option value="datalist four">
+                    <option value="datalist five">
+                </datalist> <br> <br>
+
+                <label for="output">Output Example: </label>
+                0
+                <input type="range" id="a" name="a" value="50">
+                100 +
+                <input type="number" id="b" name="b" value="50">
+                =
+                <output name="x" for="a b"></output>
+                <br><br>
+                <input type="submit" value="Send">
+
+            </fieldset>
+        </form>
+    </div>
+
+    <div style="background-color: bisque;">
+        <h1>Input Types</h1>
+
+        <form action="#" method="post">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name"> <br> <br>
+
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email"> <br> <br>
+
+            <label for="pass">Password: </label>
+            <input type="password" id="pass" name="pass"> <br> <br>
+
+            <label for="tel">Telephone: </label>
+            <input type="tel" id="tel" name="tel"> <br> <br>
+
+            <label for="age">Age: </label>
+            <input type="number" id="age" name="age" min="0" max="10"> <br> <br>
+            
+            <label for="gender">Choose Gender: </label>
+            <input type="radio" name="gender-radio" value="male" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender-radio" value="female" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender-radio" value="other" id="other">
+            <label for="other">Other</label> <br> <br>
+
+            <label for="checkboxes">Choose Places: </label>
+            <input type="checkbox" name="checkbox1" value="bd" id="checkbox1">
+            <label for="checkbox1">BD</label>
+            <input type="checkbox" name="checkbox2" value="saudi arabia" id="checkbox2">
+            <label for="checkbox2">Saudi</label>
+            <input type="checkbox" name="checkbox3" value="qatar" id="checkbox3">
+            <label for="checkbox3">Qatar</label> <br> <br>
+
+            <label for="url">Website: </label>
+            <input type="url" id="url" name="url"> <br> <br>
+
+            <label for="week">Week: </label>
+            <input type="week" id="week" name="week"> <br> <br>
+
+            <label for="month">Month: </label>
+            <input type="month" id="month" name="month"> <br> <br>
+
+            <label for="date">Date: </label>
+            <input type="date" id="date" name="date"> <br> <br>
+
+            <label for="time">Time: </label>
+            <input type="time" id="time" name="time"> <br> <br>
+
+            <label for="datetime-local">Datetime-local: </label>
+            <input type="datetime-local" id="datetime-local" name="datetime-local"> <br> <br>
+
+            <label for="color">Color: </label>
+            <input type="color" id="color" name="color"> <br> <br>
+
+            <label for="file">File: </label>
+            <input type="file" id="file" name="file"> <br> <br>
+
+            <label for="image">Image: </label>
+            <input type="image" src="../14. html images/images/three.jpg" style="width: 50px; height: auto;" name="image"> <br> <br>
+
+            <label for="range">Range: </label>
+            <input type="range" id="range" name="range" min="0" max="100"> <br> <br>
+
+            <label for="search">Search: </label>
+            <input type="search" id="search" name="search" placeholder="Search Here..."> <br> <br>
+
+            <label for="hidden">Hidden: </label>
+            <input type="hidden" id="hidden" name="hidden" value="1234"> <br> <br>
+
+            <label for="button">Button: </label>
+            <input type="button" value="Click Here" onclick="alert('Hola')"> <br> <br>
+
+            <input type="reset" value="Reset"> <br> <br>
+
+            <input type="submit" value="Submit"> <br> <br>
+        </form>
+    </div>
+
+    
+    
+</body>
+</html>

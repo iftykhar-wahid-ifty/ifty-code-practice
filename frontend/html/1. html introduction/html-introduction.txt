@@ -1,0 +1,56 @@
+==============================
+HTML INTRODUCTION NOTES
+==============================
+
+1. WHAT IS HTML?
+-------------------------------
+HTML stands for **HyperText Markup Language**.
+It is the **standard language** used to create and design web pages.
+HTML defines the **structure** of a web page using a set of tags and elements.
+
+Every website on the internet uses HTML in some form.
+
+-------------------------------
+2. PURPOSE OF HTML
+-------------------------------
+- HTML tells the browser how to display content.
+- It structures text, images, links, tables, forms, and other media.
+- It works together with:
+  → CSS (Cascading Style Sheets) for styling.
+  → JavaScript for interactivity.
+
+Example relationship:
+HTML        = Structure
+CSS         = Style
+JavaScript  = Behavior
+
+-------------------------------
+3. FEATURES OF HTML
+-------------------------------
+- Simple and easy to learn.
+- Platform independent (works on any browser or OS).
+- Supports multimedia (images, audio, video).
+- Allows linking of web pages using hyperlinks.
+- Supports forms for user input.
+- Extensible through HTML5 semantic and multimedia tags.
+
+-------------------------------
+4. ADVANTAGES OF HTML
+-------------------------------
+- Easy to learn and use.
+- Supported by all browsers.
+- Free and open-source.
+- Integrates easily with CSS and JavaScript.
+- Lightweight and fast to load.
+
+-------------------------------
+5. LIMITATIONS OF HTML
+-------------------------------
+- Cannot produce dynamic output alone.
+- Depends on CSS for styling.
+- Depends on JavaScript or backend languages for logic.
+- Limited security features.
+
+-------------------------------
+END OF HTML INTRODUCTION NOTES
+==============================

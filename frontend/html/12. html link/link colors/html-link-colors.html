@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Link Colors</title>
+
+    <style>
+        a{
+            font-size: 30px;
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        a:link {
+            color: white;
+            background-color: blue;
+        }
+        a:visited {
+            color: white;
+            background-color: purple;
+        }
+        a:hover {
+            color: yellow;
+            background-color: darkblue;
+        }
+        a:active {
+            color: white;
+            background-color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!--
+        :link   	– Selects unvisited links
+        :visited 	– Selects visited links
+        :hover  	– Selects links when the mouse hovers over them
+        :active  	– Selects the link at the moment it is clicked
+    -->
+
+    <a type="button" href="https://github.com/iftykhar-wahid-ifty">Click Here</a>
+
+</body>
+</html>

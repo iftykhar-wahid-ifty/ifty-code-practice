@@ -1,0 +1,88 @@
+==============================
+HTML BASICS NOTES
+==============================
+
+1. WHAT IS HTML?
+-------------------------------
+HTML stands for HyperText Markup Language.
+It is the standard language used to create and design web pages.
+HTML describes the structure of a webpage using a system of tags.
+
+Every web page you see on the internet is built using HTML.
+
+-------------------------------
+2. BASIC STRUCTURE OF AN HTML PAGE
+-------------------------------
+<!DOCTYPE html>     → Declares the document type and version of HTML.
+<html>              → Root element of the document.
+<head>              → Contains metadata (title, links, scripts, styles).
+<title>             → Sets the title of the page (shown in the browser tab).
+<body>              → Contains the content that appears on the webpage.
+
+Example:
+--------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First Web Page</title>
+</head>
+<body>
+  <h1>Hello, World!</h1>
+  <p>This is my first HTML page.</p>
+</body>
+</html>
+--------------------------------
+
+-------------------------------
+3. ELEMENTS AND TAGS
+-------------------------------
+- HTML uses "tags" enclosed in < > brackets.
+- Most tags come in pairs: <starting tag> ... </closing tag>
+- The opening tag starts the element, and the closing tag ends it.
+
+Example:
+<p>This is a paragraph.</p>
+
+Some tags are self-closing (void elements):
+<br>, <hr>, <img>, <input>, <meta>, <link>
+
+-------------------------------
+4. ATTRIBUTES
+-------------------------------
+- Attributes provide additional information about an element.
+- They are written inside the opening tag.
+- Example: <tag attribute="value">
+
+Example:
+<img src="photo.jpg" alt="A beautiful photo">
+
+Common attributes:
+- id        → Unique identifier
+- class     → Used for CSS styling or JS
+- src       → Source of image, audio, or video
+- href      → Link destination
+- style     → Inline CSS styling
+- title     → Tooltip text
+
+-------------------------------
+5. SEMANTIC TAGS (HTML5)
+-------------------------------
+Semantic elements describe the meaning of the content.
+
+Examples:
+<header>    → Top section of the page
+<nav>       → Navigation bar
+<section>   → A section of content
+<article>   → An independent piece of content
+<aside>     → Sidebar content
+<footer>    → Bottom section of the page
+
+-------------------------------
+6. DOCTYPE AND HTML VERSIONS
+-------------------------------
+<!DOCTYPE html> → Declares HTML5 document
+Older versions include HTML 4.01, XHTML, etc.
+
+-------------------------------
+END OF NOTES
+==============================

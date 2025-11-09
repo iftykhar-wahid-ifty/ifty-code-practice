@@ -1,0 +1,47 @@
+#table-border-normal tr, 
+#table-border-normal th, 
+#table-border-normal td , 
+#table-border-normal table{
+    border: 1px solid black;
+}
+
+#table-border-collapse tr, 
+#table-border-collapse th, 
+#table-border-collapse td , 
+#table-border-collapse table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+#table-border-collapse table{
+    width: 100%;
+}
+
+#table-border-spacing-padding tr, 
+#table-border-spacing-padding th, 
+#table-border-spacing-padding td , 
+#table-border-spacing-padding table{
+    border: 1px solid black;
+    text-align: center;
+    border-spacing: 20px;
+    padding: 5px;
+    border-radius: 10px;
+}
+#table-border-spacing-padding table{
+    width: 100%;
+    border-radius: 0;
+}
+
+#table-border-colgroup tr, 
+#table-border-colgroup th, 
+#table-border-colgroup td , 
+#table-border-colgroup table{
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+    border-collapse: collapse;
+}
+#table-border-colgroup table{
+    width: 90%;
+    margin: 0 auto;
+}

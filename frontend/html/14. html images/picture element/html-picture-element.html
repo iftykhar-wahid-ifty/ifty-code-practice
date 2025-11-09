@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Image - Picture Element</title>
+</head>
+<body>
+
+
+    <!--
+        Tag         : source
+        Attribute   : media, srcset
+
+        - The <picture> element contains one or more <source> elements, each referring to different images through the srcset attribute. This way the browser can choose the image that best fits the current view and/or device.
+        - Each <source> element has a media attribute that defines when the image is the most suitable.
+        - Note: Always specify an <img> element as the last child element of the <picture> element. The <img> element is used by browsers that do not support the <picture> element, or if none of the <source> tags match 
+
+        Order to Use:
+            min-width	- Descending    (600 → 400 → 200)
+            max-width	- Ascending     (200 → 400 → 600)
+    -->
+    
+    <picture>
+        <source media="(min-width: 600px)" srcset="../images/four.jpg">
+        <source media="(min-width: 400px)" srcset="../images/three.jpg">
+        <source media="(min-width: 200px)" srcset="../images/two.jpg">
+        <img src="../images/one.jpg" alt="one.jpg">
+    </picture> <br>
+
+    <picture>
+        <source media="(max-width: 200px)" srcset="../images/two.jpg">
+        <source media="(max-width: 400px)" srcset="../images/three.jpg">
+        <source media="(max-width: 600px)" srcset="../images/four.jpg">
+        <img src="../images/one.jpg" alt="one.jpg">
+    </picture>
+
+
+</body>
+</html>

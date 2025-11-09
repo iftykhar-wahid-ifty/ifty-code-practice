@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Iframe</title>
+</head>
+<body>
+
+    <!-- 
+    Purpose:
+        - Embeds another HTML document or external resource (like a website, map, or video) into the current page.
+
+    Syntax:
+        <iframe src="URL" width="..." height="..." title-"description"></iframe>
+
+    Common Attributes:
+        - src               : (Required) URL of the page to embed
+        - width             : Width of the iframe (in px or %)
+        - height            : Height of the iframe
+        - title             : Describes the iframe content for accessibility
+        - name              : Name of the iframe (used for targeting links)
+        - allow             : Permissions (e.g., camera, fullscreen)
+        - allowfullscreen   : Enables fullscreen mode (Boolean)
+        - loading           : lazy | eager (controls iframe loading behavior)
+        - sandbox           : Applies restrictions (e.g., disable scripts or forms)
+
+    Security Tip:
+        - Use the 'sandbox' attribute to restrict third-party content.
+        Example: sandbox="allow-scripts allow-same-origin"
+
+    Notes:
+        - Browsers treat iframes from different origins as separate for security (same-origin policy).
+        - Avoid overusing iframes; can affect performance and SEO.
+    -->
+
+    <div style="background-color: bisque;">
+        <h4>Iframe - Webpage</h4>
+        <iframe src="../14. html images/normal example/html-normal-example.html" frameborder="0" width="100%" height="300px"></iframe>
+    </div> <br>
+
+    <div style="background-color: burlywood;">
+        <h4>Iframe - YouTube Video</h4>
+        <iframe width="100%" height="300px" src="https://www.youtube.com/embed/YiSQ_db-Dcw?si=yF_O8Hkwff3VUVgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div> <br>
+    
+    <div style="background-color: gainsboro;">
+        <h4>Iframe - Location</h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.097231670137!2d90.52944389999996!3d23.7795517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755cb1cdbf0ab0b%3A0x7ed160a07c889225!2sHassan%20Nipu%20Villa!5e0!3m2!1sen!2sbd!4v1748250608245!5m2!1sen!2sbd" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    
+</body>
+</html>
