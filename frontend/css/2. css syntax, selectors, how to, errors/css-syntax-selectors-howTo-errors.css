@@ -1,0 +1,56 @@
+/*
+CSS Overview:
+
+1. CSS Syntax:
+   - The basic structure of CSS is: selector { property: value; }
+   - Example:
+       p {
+           color: blue;
+           font-size: 16px;
+       }
+   - The selector targets HTML elements, and the property-value pair defines their style.
+
+2. CSS Selectors:
+   CSS selectors allow you to target specific elements to apply styles. They can be divided into five categories:
+   a) Simple Selectors: select elements based on name, id, or class.
+      Example: div, #header, .menu
+   b) Combinator Selectors: select elements based on a specific relationship.
+      Example: div > p, ul li
+   c) Pseudo-class Selectors: select elements based on a certain state.
+      Example: a:hover, input:focus
+   d) Pseudo-element Selectors: select and style a part of an element.
+      Example: p::first-letter, span::after
+   e) Attribute Selectors: select elements based on an attribute or attribute value.
+      Example: input[type="text"], a[target="_blank"]
+
+3. How to Add CSS:
+   - Inline CSS: directly in the HTML element using the style attribute.
+   - Internal CSS: inside a <style> tag in the HTML <head>.
+   - External CSS: in a separate .css file linked to HTML using <link>.
+
+4. Common CSS Errors:
+   - Missing semicolons at the end of property declarations.
+   - Invalid property names or typos.
+   - Invalid values that the property does not accept.
+   - Unclosed braces { } or extra colons/semicolons.
+   - Conflicting or overriding styles due to selector specificity issues.
+   - Forgetting units for properties that require them (e.g., width: 100; should be 100px).
+   - Incorrect nesting in CSS (especially in preprocessors like SCSS).
+   - Using browser-specific properties without proper prefixes.
+   - Misspelling selector names or forgetting a period (.) or hash (#) for classes/IDs.
+   - Overusing !important which can make debugging harder.
+
+5. Tips to Avoid CSS Errors:
+   - Use a code editor with syntax highlighting to easily spot mistakes.
+   - Validate your CSS using a linter or online validator.
+   - Write CSS in small sections and test frequently to catch errors early.
+   - Comment your CSS sections to stay organized and avoid confusion.
+   - Keep consistent formatting and indentation.
+   - Test your styles in multiple browsers to catch compatibility issues.
+
+*/
+
+
+h3{
+    background-color:cadetblue;
+}

@@ -1,0 +1,119 @@
+/* ============================================================================
+   CSS Padding Properties Reference
+   ============================================================================
+
+   The `padding` property defines the inner spacing between the content of an 
+   element and its border. Unlike margins, padding cannot be negative.
+
+============================================================================ */
+
+/* ----------------------------------------------------------------------------
+   1. padding (Shorthand Property)
+   ----------------------------------------------------------------------------
+   Sets padding for all four sides of an element in one line.
+
+   Syntax:
+     padding: <top> <right> <bottom> <left>;
+
+   Value interpretation based on number of values:
+
+     - 1 value  → all four sides
+         padding: 10px;               → top, right, bottom, left = 10px
+
+     - 2 values → vertical | horizontal
+         padding: 10px 20px;          → top & bottom = 10px, right & left = 20px
+
+     - 3 values → top | horizontal | bottom
+         padding: 10px 20px 30px;     → top = 10px, right & left = 20px, bottom = 30px
+
+     - 4 values → top | right | bottom | left
+         padding: 10px 20px 30px 40px;
+
+   Units:
+     px, em, rem, %, vw, vh, etc.
+
+---------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------
+   2. Individual Side Padding
+   ----------------------------------------------------------------------------
+   Padding can also be set per side independently:
+
+     padding-top: 10px;
+     padding-right: 15px;
+     padding-bottom: 20px;
+     padding-left: 25px;
+
+---------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------
+   3. Box Model Reminder
+   ----------------------------------------------------------------------------
+   Padding is part of the **box model**, and affects the total size of elements
+   unless `box-sizing: border-box;` is applied.
+
+   Default behavior:
+     - Element width = content + padding + border
+
+   With box-sizing set to border-box:
+     - Element width includes padding and border
+       → padding shrinks the content area instead of increasing overall width
+
+---------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------
+   4. Zero Padding
+   ----------------------------------------------------------------------------
+   To remove all padding from an element:
+
+     padding: 0;
+
+     OR set individually:
+     padding-top: 0;
+     padding-bottom: 0;
+
+---------------------------------------------------------------------------- */
+
+/* ============================================================================
+   End of Padding Reference
+============================================================================ */
+
+div{
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+    margin: 10px;
+    text-align: center;
+}
+body{
+    padding: 0;
+}
+
+.padding-top{
+    padding-top: 50px;
+}
+
+.padding-right{
+    padding-right: 50px;
+}
+
+.padding-bottom{
+    padding-bottom: 50px;
+}
+
+.padding-left{
+    padding-left: 50px;
+}
+
+.padding-shorthand{
+    padding: 10px 30px 50px;
+}
+
+.box-model-one{
+    padding: 10px;
+}
+
+.box-model-two{
+    box-sizing: border-box;
+    padding: 10px;
+}

@@ -1,0 +1,134 @@
+/*
+-------------------------------
+| 🔹 1. background-color
+-------------------------------
+- Syntax: background-color: <color>;
+
+-------------------------------
+| 🔹 2. opacity
+-------------------------------
+- Syntax: opacity: <value>; // 0 (transparent) to 1 (opaque)
+
+-------------------------------
+| 🔹 3. background-image
+-------------------------------
+- Syntax: background-image: url("image.jpg");
+
+-------------------------------
+| 🔹 4. background-repeat
+-------------------------------
+- Values:
+  - repeat (default)
+  - no-repeat
+  - repeat-x
+  - repeat-y
+- Syntax: background-repeat: no-repeat;
+
+-------------------------------
+| 🔹 5. background-attachment
+-------------------------------
+- Values:
+  - scroll (default)
+  - fixed
+  - local
+- Syntax: background-attachment: fixed;
+
+-------------------------------
+| 🔹 6. background-size
+-------------------------------
+- Values:
+  - auto
+  - cover
+  - contain
+  - <length> (e.g., 100px 200px)
+  - <percentage> (e.g., 100% 100%)
+- Syntax: background-size: cover;
+
+-------------------------------
+| 🔹 7. background-position
+-------------------------------
+- Values:
+  - Keyword positions: top left, top center, top right,
+                       center left, center center, center right,
+                       bottom left, bottom center, bottom right
+  - Length: 50px 100px
+  - Percentage: 50% 50%
+- Syntax: background-position: center center;
+
+-------------------------------
+| 🔹 8. background-clip
+-------------------------------
+- Values:
+  - border-box (default)
+  - padding-box
+  - content-box
+- Syntax: background-clip: padding-box;
+
+-------------------------------
+| 🔹 9. background-origin
+-------------------------------
+- Values:
+  - border-box
+  - padding-box
+  - content-box
+- Syntax: background-origin: content-box;
+
+-------------------------------
+| 🔹 10. background (shorthand)
+-------------------------------
+- Syntax:
+  background:
+    [color]
+    [image]
+    [position] / [size]
+    [repeat]
+    [attachment]
+    [origin]
+    [clip];
+
+- Example:
+  background: #f0f0f0 url('bg.jpg') no-repeat center/cover fixed padding-box content-box;
+
+Note:
+- `background-clip` and `background-origin` must be last and may be omitted.
+- Use `/` to separate `position` and `size`.
+*/
+
+
+/* for all images */
+img{
+    width: 50px;
+    height: auto;
+}
+
+/* main background works */
+h1{
+    background-color: gray;
+}
+h2{
+    background-color: gray;
+    opacity: 0.5;
+}
+#image-one{
+    width: 90vw;
+    height: 100vh;
+    border: 1px solid black;
+
+    background-image: url("image.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+/*
+background: [background-color] [background-image] [background-position] / [background-size] [background-repeat] [background-attachment] [background-clip] [background-origin];
+- ⚠️ You don’t need to use all of them — only include what you need.
+*/
+#image-two{
+    width: 90vw;
+    height: 100vh;
+    border: 1px solid black;
+
+    background: url(image.jpg) center center / cover no-repeat scroll;
+}

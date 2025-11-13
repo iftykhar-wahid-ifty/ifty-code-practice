@@ -1,0 +1,18 @@
+h1{
+    background-color: lightgray;
+}
+h2{
+    background-color: rgb(112, 161, 255);
+}
+h3{
+    background-color: rgba(116, 125, 140,1.0);
+}
+h4{
+    background-color: #ff7f50;
+}
+h5{
+    background-color: hsl(244, 45%, 80%);
+}
+h6{
+    background-color: hsla(244, 45%, 80%, 0.5);
+}

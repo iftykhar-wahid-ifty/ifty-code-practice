@@ -1,0 +1,36 @@
+/*
+
+    What is CSS?
+        - CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML or XML. It defines how elements should be displayed on screen, paper, or in other media.
+
+    Purpose of CSS
+        - Separates content (HTML) from presentation (CSS)
+        - Enhances design flexibility and site maintainability
+        - Allows the same HTML page to have different looks across devices or screen sizes
+
+    Key Concepts in CSS
+    1. Selectors: 
+        - Specify which HTML elements the styles apply to.
+    2. Properties and Values: 
+        - Define what aspect of the element to style and how.
+    3. Cascading and Inheritance: 
+        - Cascading determines which styles are applied when multiple rules match (based on specificity and source order).
+        - Inheritance allows some properties to be passed from parent to child elements.
+    4. Box Model: Every HTML element is treated as a box with:
+        - content
+        - padding
+        - border
+        - margin
+
+    Types of CSS: 
+        Inline CSS 	    – Applied directly to HTML elements using the style attribute
+        Internal CSS 	– Defined within <style> tags in the HTML document's <head>
+        External CSS 	– Linked through a separate .css file using <link> tag
+
+    Advantages of CSS:
+    - Cleaner and more maintainable code
+    - Consistent design across multiple pages
+    - Reduces code duplication
+    - Enables responsive web design
+
+*/

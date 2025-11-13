@@ -1,0 +1,147 @@
+/* ============================================================================
+   CSS Margin Properties Reference
+   ============================================================================
+
+   The `margin` property controls the outer space **around** an element.
+   It can be used as a shorthand or set individually per side.
+
+============================================================================ */
+
+/* ----------------------------------------------------------------------------
+   1. margin (Shorthand Property)
+   ----------------------------------------------------------------------------
+   Sets margins on all four sides of an element: top, right, bottom, and left.
+
+   Syntax:
+     margin: <top> <right> <bottom> <left>;
+
+   Value interpretation based on number of values:
+
+     - 1 value  → all four sides
+         margin: 10px;           → top, right, bottom, left = 10px
+
+     - 2 values → vertical | horizontal
+         margin: 10px 20px;      → top & bottom = 10px, right & left = 20px
+
+     - 3 values → top | horizontal | bottom
+         margin: 10px 20px 30px; → top = 10px, right & left = 20px, bottom = 30px
+
+     - 4 values → top | right | bottom | left
+         margin: 10px 20px 30px 40px;
+
+   Units:
+     px, em, rem, %, vw, vh, etc.
+
+   Special value:
+     - `auto` → Used mainly for centering block elements horizontally
+       Example: margin: 0 auto;
+
+---------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------
+   2. Individual Side Margins
+   ----------------------------------------------------------------------------
+   You can set margins on each side independently:
+
+     margin-top: 10px;
+     margin-right: 15px;
+     margin-bottom: 20px;
+     margin-left: 25px;
+
+---------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------
+   3. Negative Margins
+   ----------------------------------------------------------------------------
+   Margins can be negative to "pull" elements closer or overlap them.
+
+   Example:
+     margin-left: -10px;
+
+   ⚠️ Use with care to avoid layout issues.
+
+---------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------
+   4. Margin Collapsing (Important Concept)
+   ----------------------------------------------------------------------------
+   Vertical margins (top & bottom) between block elements may **collapse**,
+   meaning only the larger margin is used instead of being added together.
+
+   Example:
+     - If one element has margin-bottom: 20px;
+     - and the next has margin-top: 30px;
+     → The resulting space between them is 50px, not 30px.
+
+   Margin collapsing does NOT apply to horizontal (left/right) margins.
+
+---------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------
+   5. Zero Margin
+   ----------------------------------------------------------------------------
+   To completely remove margin:
+
+     margin: 0;
+     OR
+     margin-top: 0;
+     margin-bottom: 0;
+
+---------------------------------------------------------------------------- */
+
+/* ============================================================================
+   End of Margin Reference
+============================================================================ */
+
+
+div{
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+}
+
+body{
+    margin: 0;
+}
+
+.margin-top{
+    margin-top: 50px;
+}
+
+.margin-right{
+    position: absolute;
+    right: 0;
+    top: 155;
+    
+    margin-right: 50px;
+}
+
+.margin-left{
+    margin-left: 50px;
+}
+
+.margin-bottom{
+    margin-bottom: 50px;
+}
+
+.margin-shorthand{
+    margin: 10px 20px 30px 40px;
+}
+
+.margin-negative{
+    margin: -20px;
+
+    margin-bottom: 10px;
+}
+
+.margin-collapse{
+    margin-top: 30px;
+}
+
+.margin-inherit{
+    margin-left: 15px;
+}
+
+.margin-inherit p{
+    margin-left: inherit;
+}

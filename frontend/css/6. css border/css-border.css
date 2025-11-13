@@ -1,0 +1,204 @@
+/* ============================================================================
+   CSS Border Properties Reference
+   ============================================================================
+
+   This documentation covers the main CSS properties used to define borders:
+   - border-style
+   - border-width
+   - border-color
+   - border shorthand
+   - individual side borders
+   - border-radius (rounded corners)
+
+============================================================================ */
+
+/* ----------------------------------------------------------------------------
+   1. border-style
+   ----------------------------------------------------------------------------
+   Defines the style of the border. 
+
+   Possible values:
+     - dotted   : Defines a dotted border.
+     - dashed   : Defines a dashed border.
+     - solid    : Defines a solid border.
+     - double   : Defines a double border.
+     - groove   : Defines a 3D grooved border (depends on border-color).
+     - ridge    : Defines a 3D ridged border (depends on border-color).
+     - inset    : Defines a 3D inset border (depends on border-color).
+     - outset   : Defines a 3D outset border (depends on border-color).
+     - none     : No border is applied.
+     - hidden   : Same as "none", but used mainly in table layouts.
+
+   When using multiple values:
+     border-style: top right bottom left;
+
+     - 1 value  → all sides
+     - 2 values → top & bottom, right & left
+     - 3 values → top, right & left, bottom
+     - 4 values → top, right, bottom, left
+
+---------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------
+   2. border-width
+   ----------------------------------------------------------------------------
+   Defines the width of the border. Can be set in units such as:
+     - px (pixels)
+     - em (relative to font-size)
+     - rem, pt, cm, %, etc.
+
+   Examples:
+     border-width: 2px;
+     border-width: 2px 4px;
+     border-width: 1px 3px 5px;
+     border-width: 1px 2px 3px 4px;
+
+   Values follow the same shorthand rules as border-style (top, right, etc.)
+
+---------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------
+   3. border-color
+   ----------------------------------------------------------------------------
+   Sets the color of the border. Can use any valid CSS color format:
+     - Named colors (e.g., red, blue)
+     - HEX (e.g., #ff0000)
+     - RGB (e.g., rgb(255, 0, 0))
+     - RGBA, HSL, HSLA, etc.
+
+   Example:
+     border-color: red green blue yellow;
+   Order: top, right, bottom, left (same shorthand logic as style/width)
+
+---------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------
+   4. Individual Side Borders
+   ----------------------------------------------------------------------------
+   You can define border properties per side:
+
+     border-top-style: dotted;
+     border-right-style: solid;
+     border-bottom-style: dashed;
+     border-left-style: double;
+
+     border-top-width: 2px;
+     border-right-width: 3px;
+     border-bottom-width: 2px;
+     border-left-width: 1px;
+
+     border-top-color: red;
+     border-right-color: green;
+     border-bottom-color: blue;
+     border-left-color: black;
+
+---------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------
+   5. border (Shorthand Property)
+   ----------------------------------------------------------------------------
+   Combines border-width, border-style, and border-color into one line.
+   Note: border-style is **required** for the shorthand to work.
+
+   Syntax:
+     border: [border-width] [border-style] [border-color];
+
+   Example:
+     border: 2px solid #000;
+
+---------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------
+   6. Rounded Borders (border-radius)
+   ----------------------------------------------------------------------------
+   Used to create rounded corners on elements.
+
+   Syntax:
+     border-radius: <length>;
+
+   Examples:
+     border-radius: 10px;               → all corners
+     border-radius: 10px 5px;           → top-left & bottom-right, top-right & bottom-left
+     border-radius: 5px 6px 7px         → top-left, top-right & bottom-left, bottom-right
+     border-radius: 10px 5px 3px 1px;   → top-left, top-right, bottom-right, bottom-left
+
+   You can also target corners individually:
+     border-top-left-radius: 10px;
+     border-top-right-radius: 5px;
+     border-bottom-right-radius: 3px;
+     border-bottom-left-radius: 1px;
+
+---------------------------------------------------------------------------- */
+
+/* ============================================================================
+   End of Border Reference
+============================================================================ */
+
+
+div{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.border-style{
+    border-style: solid;
+}
+
+.border-width{
+    border-style: dotted;
+    border-width: 5px;
+}
+
+.border-color{
+    border-style: dashed;
+    border-width: 3px;
+    border-color: blueviolet;
+}
+
+.rounded-border{
+    border-style: double;
+    border-width: 10px;
+    border-color: cadetblue;
+    border-radius: 10px;
+}
+
+.border-shorthand{
+    border: 5px solid rgba(109, 219, 7, 0.549);
+}
+
+.border-multiple-values{
+    border-style: solid dashed;
+    border-width: 1px 3px 5px;
+    border-color: red green  yellow blue;
+}
+.border-individual-sides{
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dashed;
+    border-left-style: double;
+
+    border-top-width: 2px;
+    border-right-width: 3px;
+    border-bottom-width: 4px;
+    border-left-width: 5px;
+
+    border-top-color: red;
+    border-right-color: green;
+    border-bottom-color: blue;
+    border-left-color: yellow;
+}
+
+.individual-rounded-borders-one{
+    border: 5px solid blue;
+    border-radius: 10px 25px 15px;
+}
+
+.individual-rounded-borders-two{
+    border: 5px solid brown;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 1px;
+}
