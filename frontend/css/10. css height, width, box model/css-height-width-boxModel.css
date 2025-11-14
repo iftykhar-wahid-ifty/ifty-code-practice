@@ -1,0 +1,145 @@
+/*
+
+========================================
+🔹 CSS Height & Width
+========================================
+
+Purpose:
+- Controls the size of an element's content box.
+
+----------------------------------------
+🔸 width
+----------------------------------------
+- Defines the width of the content area.
+- Values:
+    auto        	→ default
+    <length>    	→ px, cm, etc.
+    <percentage>	→ % of parent
+    initial     	→ sets to default
+    inherit     	→ takes from parent
+
+- Syntax:
+    width: 200px;
+    width: 50%;
+
+----------------------------------------
+🔸 height
+----------------------------------------
+- Sets the height of the content area.
+- Values:
+    auto (default)
+    <length>
+    <percentage>
+    initial
+    inherit
+
+- Syntax:
+    height: 300px;
+
+----------------------------------------
+🔸 max-width / min-width
+----------------------------------------
+max-width:
+    - Prevents the element from exceeding a certain width.
+    - Often used to fix layout issues in responsive design.
+
+min-width:
+    - Ensures the width never goes below a certain value.
+
+- Syntax:
+    max-width: 600px;
+    min-width: 200px;
+
+----------------------------------------
+🔸 max-height / min-height
+----------------------------------------
+Similar to max/min width.
+
+- Syntax:
+    max-height: 400px;
+    min-height: 150px;
+
+----------------------------------------
+🔸 box-sizing
+----------------------------------------
+Defines how width & height are calculated.
+
+- Values:
+    content-box (default) 	→ width = content only
+    border-box            	→ width includes padding + border
+
+- Syntax:
+    box-sizing: border-box;
+
+
+
+
+    
+========================================
+🔹 CSS Box Model
+========================================
+
+The CSS box model consists of:
+1. Content 	→ text, images
+2. Padding 	→ space around content
+3. Border  	→ surrounding the padding
+4. Margin  	→ outer space around border
+
+----------------------------------------
+🔸 content
+----------------------------------------
+- Actual text or image inside the element.
+
+----------------------------------------
+🔸 padding
+----------------------------------------
+- Space inside the element around the content.
+
+- Syntax:
+    padding: 20px;
+    padding: 10px 15px;               // top-bottom | left-right
+    padding: 10px 20px 30px 40px;     // top | right | bottom | left
+
+----------------------------------------
+🔸 border
+----------------------------------------
+- Area surrounding the padding.
+
+- Syntax:
+    border: 2px solid black;
+
+- Components:
+    border-width
+    border-style   (solid, dotted, dashed, double, groove, ridge, inset, outset)
+    border-color
+
+----------------------------------------
+🔸 margin
+----------------------------------------
+- Space outside the border.
+
+- Syntax:
+    margin: 20px;
+    margin: 10px auto;   // auto → centers block elements horizontally
+
+----------------------------------------
+🔸 box-sizing
+----------------------------------------
+- How the total width/height is calculated.
+
+content-box:
+    width = content only (padding + border increase total size)
+
+border-box:
+    width = content + padding + border (recommended for layouts)
+
+- Syntax:
+    box-sizing: border-box;
+
+----------------------------------------
+🔸 Total element size (content-box default)
+----------------------------------------
+Total Width  = width + padding-left + padding-right + border-left + border-right + margin-left + margin-right
+Total Height = height + padding-top + padding-bottom + border-top + border-bottom + margin-top + margin-bottom
+
+*/

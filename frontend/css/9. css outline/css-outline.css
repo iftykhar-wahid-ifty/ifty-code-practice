@@ -1,0 +1,112 @@
+/*
+
+----------------------------------------
+| 🔹 CSS Outline
+----------------------------------------
+
+📌 Purpose:
+- Outlines are lines drawn outside an element's border.
+- They do not take up space, unlike borders.
+- Useful for accessibility (focus states) and highlighting elements.
+
+----------------------------------------
+| 🔹 outline-style
+----------------------------------------
+- Defines the style of the outline.
+- Values:
+    none | solid | dotted | dashed | double | groove | ridge | inset | outset
+- Syntax:
+    outline-style: solid;
+
+----------------------------------------
+| 🔹 outline-width
+----------------------------------------
+- Defines the thickness of the outline.
+- Values:
+    thin | medium | thick | <length> (px, em, etc.)
+- Syntax:
+    outline-width: 3px;
+
+----------------------------------------
+| 🔹 outline-color
+----------------------------------------
+- Sets the color of the outline.
+- Values:
+    color name | hex | rgb | rgba | currentColor
+- Syntax:
+    outline-color: red;
+
+----------------------------------------
+| 🔹 outline (shorthand)
+----------------------------------------
+- Combines style, width, and color in one property.
+- Syntax:
+    outline: <outline-width> <outline-style> <outline-color>;
+- Example:
+    outline: 2px dashed blue;
+
+----------------------------------------
+| 🔹 outline-offset
+----------------------------------------
+- Sets the space between the border and the outline.
+- Values:
+    <length> (px, em, etc.)
+- Syntax:
+    outline-offset: 5px;
+
+*/
+
+.outline-style .dotted{
+    outline-style: dotted;
+    outline-width: thin;
+    outline-color: red;
+}
+.outline-style .dashed{
+    outline-style: dashed;
+    outline-width: thick;
+    outline-color: aquamarine;
+}
+.outline-style .solid{
+    outline-style: solid;
+    outline-width: medium;
+    outline-color: rgb(rgb(51, 3, 32), green, blue);
+}
+.outline-style .double{
+    outline-style: double;
+    outline-width: 2px;
+    outline-color: #121212;
+}
+.outline-style .groove{
+    outline-style: groove;
+    outline-width: 2px;
+    outline-color: yellow;
+}
+.outline-style .ridge{
+    outline-style: ridge;
+    outline-width: 2px;
+    outline-color: pink;
+}
+.outline-style .inset{
+    outline-style: inset;
+    outline-width: 2px;
+    outline-color: rgb(rgb(110, 7, 245), green, blue);
+}
+.outline-style .outset{
+    outline-style: outset;
+    outline-width: 2px;
+    outline-color: #292929;
+}
+
+.outline-offset .offset{
+    border: 1px solid black;
+
+    outline-style: double;
+    outline-width: thick;
+    outline-color: blue;
+    outline-offset: 10px;
+}
+
+.outline-shorthand .shorthand{
+    border: 1px solid black;
+    outline: 5px solid red;
+}
