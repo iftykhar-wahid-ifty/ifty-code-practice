@@ -1,0 +1,253 @@
+/* -----------------------------------------------------------
+   CSS TEXT
+   -----------------------------------------------------------
+
+   ▶ Text Color  
+      Controls the color applied to the text content.
+      - color: color values
+
+   ▶ Text Alignment  
+      Controls how text is aligned horizontally or vertically.
+      - text-align: left(default), right, center, justify
+      - text-align-last: auto(default), left, right, center, justify, start, end
+      - vertical-align: baseline(default), px, %, sub, super, top, text-top, middle, bottom, text-bottom
+      - direction: rtl (sets text flow direction)
+      - unicode-bidi: bidi-override (forces bidi algorithm behavior)
+
+   ▶ Text Decoration  
+      Adds visual decorations to text such as lines or styles.
+      - text-decoration-line: none(default), underline, overline, line-through
+      - text-decoration-color: <color>
+      - text-decoration-style: solid(default), double, dotted, dashed, wavy
+      - text-decoration-thickness: <px>
+      - text-decoration (shorthand):
+            text-decoration: <line> <color> <style> <thickness>;
+
+   ▶ Text Transformation  
+      Controls capitalization or transformation of text.
+      - text-transform: none, capitalize, uppercase, lowercase
+
+   ▶ Text Spacing  
+      Adjusts spacing around or between characters, words, and lines.
+      - text-indent: <px> (first-line indentation)
+      - letter-spacing: <px> (space between letters)
+      - line-height: <number/px> (height between text lines)
+      - word-spacing: <px> (space between words)
+      - white-space: normal, nowrap, pre, pre-line, pre-wrap
+
+   ▶ Text Shadow  
+      Applies shadow effects behind text.
+      - text-shadow:
+            <h-shadow> <v-shadow>;
+            <h-shadow> <v-shadow> <color>;
+            <h-shadow> <v-shadow> <blur> <color>;
+            Multiple shadows separated by commas.
+----------------------------------------------------------- */
+
+
+
+/* Ignore these styles for now if they seem unfamiliar. They are only used to improve the visual appearance. */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.first, .second{
+    background-color: antiquewhite;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+.second{
+    background-color: #95afc0;
+}
+h1{
+    background-color: #2c3e50;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+h2{
+    color: #2980b9;
+    text-decoration: underline;
+    margin: 5px 0;
+}
+/* Start from the section below — everything above is just setup. */
+
+
+
+/* TEXT COLOR */
+.text-color p{
+    color: #8e44ad;
+}
+
+/* TEXT ALIGN */
+.text-align-left{
+    text-align: left;
+}
+.text-align-right{
+    text-align: right;
+}
+.text-align-center{
+    text-align: center;
+}
+.text-align-justify{
+    text-align: justify;
+}
+
+/* TEXT ALIGN LAST */
+.text-align-last-left{
+    text-align-last: left;
+}
+.text-align-last-right{
+    text-align-last: right;
+}
+.text-align-last-center{
+    text-align-last: center;
+}
+.text-align-last-justify{
+    text-align-last: justify;
+}
+.text-align-last-start{
+    text-align-last: start;
+}
+.text-align-last-end{
+    text-align-last: end;
+}
+
+/* VERTICAL ALIGN */
+.wahid-baseline{
+    vertical-align: baseline;
+}
+.wahid-px{
+    vertical-align: 10px; /* can do -10px also*/
+}
+.wahid-percentage{
+    vertical-align: 50%;
+}
+.wahid-sub{
+    vertical-align: sub;
+}
+.wahid-super{
+    vertical-align: super;
+}
+.wahid-top{
+    vertical-align: top;
+}
+.wahid-text-top{
+    vertical-align: text-top;
+}
+.wahid-middle{
+    vertical-align: middle;
+}
+.wahid-bottom{
+    vertical-align: bottom;
+}
+.wahid-text-bottom{
+    vertical-align: text-bottom;
+}
+
+/* DIRECTION,  UNICODE BIDI */
+.direction-unicode-bidi{
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+/* TEXT DECORATION LINE */
+.overline{
+    text-decoration-line: overline;
+}
+.line-through{
+    text-decoration-line: line-through;
+}
+.underline{
+    text-decoration: underline;
+}
+.overline-underline{
+    text-decoration: overline underline;
+}
+
+/* TEXT DECORATION */
+.text-decoration-color{
+    text-decoration-line: underline;
+    text-decoration-color: red;
+}
+.text-decoration-style{
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-style: dashed;
+}
+.text-decoration-thickness{
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 10px;
+}
+.text-decoration-shorthand{
+    text-decoration: underline overline dotted blue 5px;
+}
+
+/* TEXT TRANSFORM */
+.text-transform-none{
+    text-transform: none;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.lowercase{
+    text-transform: lowercase;
+}
+
+/* TEXT SPACING */
+.text-indent{
+    text-indent: 50px;
+}
+.letter-spacing{
+    letter-spacing: 5px;
+}
+.line-height{
+    line-height: 2.5;
+}
+.word-spacing{
+    word-spacing: 15px;
+}
+.white-space-normal{
+    white-space: normal;
+}
+.white-space-nowrap{
+    white-space: nowrap;
+}
+.white-space-pre{
+    white-space: pre;
+}
+.white-space-pre-line{
+    white-space: pre-line;
+}
+.white-space-pre-wrap{
+    white-space: pre-wrap;
+}
+
+/* TEXT SHADOW */
+.text-shadow-horizontal-vertical{
+    text-shadow: 5px 5px;
+    /*
+        This technically valid (just horizontal and vertical), but most browsers expect at least a color. Some browsers may fallback to black, which is fine but might behave inconsistently. Adding black explicitly is safer:
+            - text-shadow: 5px 5px black;
+    */
+}
+.text-shadow-color{
+    text-shadow: 5px 5px red;
+}
+.text-shadow-blur{
+    text-shadow: 5px 5px 10px red;
+}
+.text-shadow-shorthand{
+    text-shadow: 5px 5px 10px blue;
+}
+.text-shadow-multiple{
+    text-shadow: 5px 5px 10px blue, -5px -5px 10px red;
+}
