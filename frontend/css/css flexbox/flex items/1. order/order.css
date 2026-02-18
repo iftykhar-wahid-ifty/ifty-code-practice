@@ -1,0 +1,59 @@
+/*
+-------------------------------
+| 🔹 order
+-------------------------------
+- Syntax        : order: <integer>;
+- Default Value : 0
+- Description   : Defines the order of a flex item inside the flex container.
+                  Items are arranged in ascending order value.
+*/
+
+
+
+
+
+/* Global styles - applied to all elements for better appearance */
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-color: azure;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #355872;
+    color: #F7F8F0;
+    border-radius: 15px;
+    padding: 20px;
+}
+.item{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin: 10px;
+    text-align: center;
+}
+
+
+/* order: int (default: 0) */
+.container{
+    display: flex;
+}
+.one{
+    order: 3;
+}
+.two{
+    order: 5;
+}
+.three{
+    order: 1;
+}
+.four{
+    order: 2;
+}
+.five{
+    order: 4;
+}

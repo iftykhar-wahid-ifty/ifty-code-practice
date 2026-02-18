@@ -1,0 +1,63 @@
+/*
+-------------------------------
+| 🔹 gap
+-------------------------------
+- Syntax        : gap: <row-gap> <column-gap>;
+                  row-gap: <length>;
+                  column-gap: <length>;
+- Default Value : 0
+- Description   : Defines the spacing between flex items.
+                  It controls both row and column spacing without using margins.
+*/
+
+
+
+
+
+/* Global styles - applied to all elements for better appearance */
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-color: azure;
+}
+.container-gap{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #355872;
+    color: #F7F8F0;
+    border-radius: 15px;
+    padding: 20px;
+}
+.container-row-column-gap{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #30364F;
+    color: #F0F0DB;
+    border-radius: 15px;
+    padding: 20px;
+}
+.item{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid white;
+    text-align: center;
+}
+
+
+/* gap: px value */
+.container-gap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;   /* Equal row and column gap */
+}
+
+/* row-gap & column-gap : px value */
+.container-row-column-gap{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 30px;
+}

@@ -1,0 +1,50 @@
+/*
+-------------------------------
+| 🔹 flex-grow
+-------------------------------
+- Syntax        : flex-grow: <number>;
+- Default Value : 0
+- Description   : Specifies how much a flex item will grow relative to the rest of the flex items 
+                  inside the container when there is extra space available.
+*/
+
+
+
+
+
+/* Global styles - applied to all elements for better appearance */
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-color: azure;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #355872;
+    color: #F7F8F0;
+    border-radius: 15px;
+    padding: 20px;
+}
+.item{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin: 10px;
+    text-align: center;
+}
+
+
+/* flex-grow: number (default: 0) */
+.container{
+    display: flex;
+}
+.one{
+    flex-grow: 2;
+}
+.five{
+    flex-grow: 3;
+}
