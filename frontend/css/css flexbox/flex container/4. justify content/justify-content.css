@@ -1,0 +1,86 @@
+/*
+-------------------------------
+| 🔹 justify-content
+-------------------------------
+- Syntax        : justify-content: flex-start | flex-end | center | space-around | space-between | space-evenly;
+- Description   : Defines how flex items are aligned along the main axis (horizontal in a row) within the flex container.
+*/
+
+
+
+
+
+/* Global styles - applied to all elements for better appearance */
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-color: azure;
+}
+.container-flex-start, .container-center, .container-space-between{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #355872;
+    color: #F7F8F0;
+    border-radius: 15px;
+    padding: 20px;
+}
+.container-flex-end, .container-space-around, .container-space-evenly{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #30364F;
+    color: #F0F0DB;
+    border-radius: 15px;
+    padding: 20px;
+}
+.item{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin: 10px;
+    text-align: center;
+}
+
+
+/* justify-content: flex-start (default) */
+.container-flex-start{
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+/* justify-content: flex-end */
+.container-flex-end{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* justify-content: center */
+.container-center{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* justify-content: space-around */
+.container-space-around{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* justify-content: space-between */
+.container-space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* justify-content: space-evenly */
+.container-space-evenly{
+    display: flex;
+    justify-content: space-evenly;
+}

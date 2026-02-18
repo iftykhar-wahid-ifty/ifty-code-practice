@@ -1,0 +1,125 @@
+/*
+-------------------------------
+| 🔹 align-items
+-------------------------------
+- Syntax        : align-items: normal | stretch | center | flex-start | flex-end | baseline;
+- Description   : Defines how flex items are aligned along the cross-axis (perpendicular to the main axis) within a single line.
+*/
+
+
+
+
+
+/* Global styles - applied to all elements for better appearance */
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-color: azure;
+}
+.container-normal, .container-center, .container-flex-end{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #355872;
+    color: #F7F8F0;
+    border-radius: 15px;
+    padding: 20px;
+}
+.container-stretch, .container-flex-start, .container-baseline{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #30364F;
+    color: #F0F0DB;
+    border-radius: 15px;
+    padding: 20px;
+}
+.item{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin: 10px;
+    text-align: center;
+}
+
+
+/* align-items: normal (default) */
+.container-normal{
+    height: 500px;
+
+    display: flex;
+    align-items: normal;
+    
+}
+
+
+/* align-items: stretch */
+.container-stretch .S-item{
+    width: 50px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin: 10px;
+    text-align: center;
+}
+.container-stretch{
+    height: 500px;
+
+    display: flex;
+    align-items: stretch;
+}
+
+
+/* align-items: center */
+.container-center{
+    height: 500px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* align-items: flex-start */
+.container-flex-start{
+    height: 500px;
+
+    display: flex;
+    align-items: flex-start;
+}
+
+
+/* align-items: flex-end */
+.container-flex-end{
+    height: 500px;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+
+/* align-items: baseline */
+.container-baseline .i1{
+    font-size: 50px;
+}
+.container-baseline .i3{
+    font-size: 40px;
+}
+.container-baseline .i5{
+    font-size: 30px;
+}
+.container-baseline .b-item{
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin: 10px;
+    text-align: center;
+}
+.container-baseline{
+    height: 500px;
+
+    display: flex;
+    align-items: baseline;
+}

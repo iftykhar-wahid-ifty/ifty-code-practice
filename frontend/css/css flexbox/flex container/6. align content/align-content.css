@@ -1,0 +1,108 @@
+/*
+-------------------------------
+| 🔹 justify-content
+-------------------------------
+- Syntax        : justify-content: flex-start | flex-end | center | space-around | space-between | space-evenly;
+- Description   : Defines how flex items are aligned along the main axis (horizontal in a row) within the flex container.
+*/
+
+
+
+
+
+/* Global styles - applied to all elements for better appearance */
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-color: azure;
+}
+.container-stretch, .container-flex-start, .container-space-around, .container-space-evenly{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #355872;
+    color: #F7F8F0;
+    border-radius: 15px;
+    padding: 20px;
+}
+.container-center, .container-flex-end, .container-space-between{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #30364F;
+    color: #F0F0DB;
+    border-radius: 15px;
+    padding: 20px;
+}
+.item{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin: 10px;
+    text-align: center;
+}
+
+
+/* align-content: stretch (default) */
+.container-stretch{
+    height: 500px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+/* align-content: center */
+.container-center{
+    height: 500px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+/* align-content: flex-start */
+.container-flex-start{
+    height: 500px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+/* align-content: flex-end */
+.container-flex-end{
+    height: 500px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+/* align-content: space-around */
+.container-space-around{
+    height: 500px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+/* align-content: space-between */
+.container-space-between{
+    height: 500px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+/* align-content: space-evenly */
+.container-space-evenly{
+    height: 500px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}

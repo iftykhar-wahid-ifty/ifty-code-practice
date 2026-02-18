@@ -1,0 +1,72 @@
+/*
+-------------------------------
+| 🔹 flex-direction
+-------------------------------
+- Syntax        : flex-direction: row | row-reverse | column | column-reverse;
+- Description   : Defines the direction of flex items along the main axis of the container.
+*/
+
+
+
+
+
+/* Global styles - applied to all elements for better appearance */
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-color: azure;
+}
+.container-row, .container-row-reverse{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #355872;
+    color: #F7F8F0;
+    border-radius: 15px;
+    padding: 20px;
+}
+.container-column, .container-column-reverse{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #30364F;
+    color: #F0F0DB;
+    border-radius: 15px;
+    padding: 20px;
+}
+.item{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin: 10px;
+    text-align: center;
+}
+
+
+/* flex-direction: row (default) */
+.container-row{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* flex-direction: column */
+.container-column{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* flex-direction: row-reverse */
+.container-row-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+/* flex-direction: column-reverse */
+.container-column-reverse{
+    display: flex;
+    flex-direction: column-reverse;
+}
